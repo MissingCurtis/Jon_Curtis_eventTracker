@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:title="@string/enable_sms">
+
+    <PreferenceCategory android:title="@string/enable_alarm">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_alarm"
+            android:title="Allow Notifications" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/enable_sms">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_sms"
+            android:title="Allow SMS messages" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

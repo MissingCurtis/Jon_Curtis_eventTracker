@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FE4E4"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="111dp"
+            android:layout_height="53dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/event_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background"
+                android:ems="10"
+                android:hint="@string/event_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+                android:importantForAutofill="no" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/event_details"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/event_details"
+            android:inputType="textMultiLine"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
+            android:importantForAutofill="no" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="40dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/set_date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1D3751"
+                android:text="@string/date"
+                app:icon="@android:drawable/ic_menu_month"
+                app:iconTint="#FFFFFF" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="80dp"
+                android:layout_height="58dp" />
+
+            <Button
+                android:id="@+id/set_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1D3751"
+                android:text="@string/time"
+                app:icon="@android:drawable/ic_lock_idle_alarm" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="76dp">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="53dp" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1D3751"
+                android:text="@string/delete" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="53dp" />
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#1D3751"
+                android:text="@string/update" />
+        </TableRow>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
